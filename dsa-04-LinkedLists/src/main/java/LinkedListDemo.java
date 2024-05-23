@@ -11,10 +11,10 @@ public class LinkedListDemo {
         node2.next = node3;
         node3.next = node4;
 
-        System.out.println("Node1's address is: " + node1 + "Node1' next address is " + node1.next);
-        System.out.println("Node2's address is: " + node2 + "Node2' next address is " + node2.next);
-        System.out.println("Node3's address is: " + node3 + "Node3' next address is " + node3.next);
-        System.out.println("Node4's address is: " + node4 + "Node4' next address is " + node4.next);
+        System.out.println("Node1's address is: " + node1 + " Node1' next address is " + node1.next);
+        System.out.println("Node2's address is: " + node2 + " Node2' next address is " + node2.next);
+        System.out.println("Node3's address is: " + node3 + " Node3' next address is " + node3.next);
+        System.out.println("Node4's address is: " + node4 + " Node4' next address is " + node4.next);
 
         Node current;
         Node head = node1;
