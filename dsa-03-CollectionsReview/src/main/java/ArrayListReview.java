@@ -3,7 +3,7 @@ import java.util.*;
 public class ArrayListReview {
     public static void main(String[] args) {
         // Create ArrayList and a class
-   List<Student> students=new ArrayList<>();
+   List<Student> students = new ArrayList<>();
 
 // Add elements to ArrayList
         students.add(new Student(1,"Jack"));
@@ -14,47 +14,48 @@ public class ArrayListReview {
         // Iteration on ArrayLists
         // 1. For Loop with get(index)
 
-        System.out.println("Printing with legacy for-loop..............");
+        System.out.println("\n------Printing with legacy for-loop------");
         for (int i = 0; i < students.size(); i++) {
             System.out.println(students.get(i));
         }
         // 2. Iterator
         // Forward Iteration
-        System.out.println("Printing with iterator..............");
+        System.out.println("\n------Printing with iterator------");
         Iterator iter= students.listIterator();
         while(iter.hasNext()){
             System.out.println(iter.next());
         }
 
         // Backwards Iteration
-        System.out.println("Printing Backwards with iterator..............");
+        System.out.println("\n------Printing Backwards with iterator------");
 
         while(((ListIterator<Student>) iter).hasPrevious()){
             System.out.println(((ListIterator<Student>) iter).previous());
         }
 
         // 3. for each loop
-        System.out.println("Printing with for_each loop..............");
+        System.out.println("\n------Printing with for_each loop------");
         for (Student s:students) {
             System.out.println(s);
         }
 
         // 4. Lambda
-        System.out.println("Printing with Lambda function loop..............");
+        System.out.println("\n------Printing with Lambda function loop------");
         students.forEach(student-> System.out.println(student));
+        //students.forEach(System.out::println);
 
 
         // Sorting Elements in List using comparator interface
-        System.out.println("Sorting with Comparator Interface by Id Desc......");
+        System.out.println("\n------Sorting with Comparator Interface by Id Desc------");
         Collections.sort(students, new sortByIdDesc());
         students.forEach(student-> System.out.println(student));
 
-        System.out.println("Sorting with Comparator Interface by Name Desc......");
+        System.out.println("\n------Sorting with Comparator Interface by Name Desc------");
         Collections.sort(students, new sortByNameDesc());
         students.forEach(student-> System.out.println(student));
 
     }
-      //  implementations of  Comparator
+      //  implementations of Comparator
     static class sortByIdDesc implements Comparator<Student> {
 
           @Override
