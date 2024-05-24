@@ -6,7 +6,7 @@ import java.util.concurrent.Callable;
 public class SetReview {
     public static void main(String[] args) {
         //1. create a set
-      Set<Student> set =new LinkedHashSet<>();
+      Set<Student> set = new LinkedHashSet<>();
         // 2 add element
 
         set.add(new Student(1,"Jack"));
@@ -15,11 +15,10 @@ public class SetReview {
         set.add(new Student(3,"Mike"));
         set.add(new Student(4,"Mary"));
 
-
         System.out.println(set);
-        //String st= "Javva Developer";
 
-        //System.out.println(firstRepeatingChar(st));
+
+        System.out.println(firstRepeatingChar("Developer"));
 
     }
     public static Character firstRepeatingChar(String str){
@@ -27,11 +26,13 @@ public class SetReview {
 
 
         // create a hashSet
-        Set<Character> chars=new HashSet<>(); // in here I have Space Complexity of O(n)
+        Set<Character> chars = new HashSet<>(); // in here I have Space Complexity of O(n)
         // iterate over the char array and add chars into hashSet
 
 
-        for(Character ch:str.toCharArray()) if (!chars.add(ch)) return ch;
+        for(Character ch:str.toCharArray())
+            if (!chars.add(ch))
+                return ch;
         // if add ops is false return that char
 
        return null;
