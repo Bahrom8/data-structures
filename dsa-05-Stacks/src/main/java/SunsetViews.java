@@ -21,7 +21,7 @@ public class SunsetViews {
         }
         while(i >= 0 && i < buildings.length) {
 
-            while(!stack.isEmpty() && buildings[i]>=buildings[stack.peek()]){
+            while(!stack.isEmpty() && buildings[i] >= buildings[stack.peek()]){
                 stack.pop();
             }
             stack.push(i);
