@@ -20,6 +20,7 @@ public class ReverseFirstKElementsQueueProblem {
         for (int i = 0; i < k; i++) {
             stack.push(queue.dequeue());
         }
+
         // enqueue elements back into the queue
         while (!stack.isEmpty()) {
             queue.enqueue(stack.pop());

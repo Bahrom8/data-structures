@@ -3,6 +3,7 @@ public class QNode<T> {
    QNode<T> next;
 
     public QNode(T value) {
+
         this.value = value;
     }
 

@@ -12,8 +12,10 @@ public class CollectionsQueue {
         Queue<Integer> cq = new LinkedList<>();
         cq.add(1);
         cq.add(3);
+
         System.out.println(cq.remove());
         System.out.println(cq.remove());
+
         TreeMap<Integer, String> hmp = new TreeMap<>();
     }
 }
