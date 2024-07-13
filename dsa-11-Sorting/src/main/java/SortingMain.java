@@ -7,7 +7,9 @@ public class SortingMain {
 
         //System.out.println(Arrays.toString(SelectionSort.selectionSort(numbers)));
 
-        System.out.println(Arrays.toString(BubbleSort.bubbleSort(numbers)));
+        //System.out.println(Arrays.toString(BubbleSort.bubbleSort(numbers)));
+
+        System.out.println(Arrays.toString(InsertionSort.insertionSort(numbers)));
 
 
 
