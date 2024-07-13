@@ -11,7 +11,9 @@ public class SortingMain {
 
         //System.out.println(Arrays.toString(InsertionSort.insertionSort(numbers)));
 
-        JD1MergeSort.mergeSort(numbers);
+        //JD1MergeSort.mergeSort(numbers);
+
+        JD1QuickSort.qSort(numbers, 0, numbers.length - 1);
 
         System.out.println(Arrays.toString(numbers));
 
