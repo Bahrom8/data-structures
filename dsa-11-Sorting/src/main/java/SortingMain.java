@@ -9,7 +9,11 @@ public class SortingMain {
 
         //System.out.println(Arrays.toString(BubbleSort.bubbleSort(numbers)));
 
-        System.out.println(Arrays.toString(InsertionSort.insertionSort(numbers)));
+        //System.out.println(Arrays.toString(InsertionSort.insertionSort(numbers)));
+
+        JD1MergeSort.mergeSort(numbers);
+
+        System.out.println(Arrays.toString(numbers));
 
 
 
